@@ -1,0 +1,189 @@
+"Severity","ThreadID","Date","Time","Application","Message"
+"ERROR","web-0","03/18/2013","14:13:05","","invalid component definition, can't find org.corfield.framework"
+"ERROR","web-0","03/18/2013","14:14:38","","invalid component definition, can't find org.corfield.framework"
+"ERROR","web-0","03/19/2013","10:20:58","","cannot determinae webcontext root, the ServletContext from class [org.eclipse.jetty.webapp.WebAppContext$Context] is returning null for the method call sc.getRealPath(""/""), possibly due to configuration problem."
+"ERROR","web-0","03/19/2013","10:21:42","","cannot determinae webcontext root, the ServletContext from class [org.eclipse.jetty.webapp.WebAppContext$Context] is returning null for the method call sc.getRealPath(""/""), possibly due to configuration problem."
+"ERROR","web-0","03/19/2013","10:22:07","","cannot determinae webcontext root, the ServletContext from class [org.eclipse.jetty.webapp.WebAppContext$Context] is returning null for the method call sc.getRealPath(""/""), possibly due to configuration problem."
+"ERROR","web-0","03/19/2013","10:22:08","","cannot determinae webcontext root, the ServletContext from class [org.eclipse.jetty.webapp.WebAppContext$Context] is returning null for the method call sc.getRealPath(""/""), possibly due to configuration problem."
+"ERROR","web-0","03/19/2013","10:22:10","","cannot determinae webcontext root, the ServletContext from class [org.eclipse.jetty.webapp.WebAppContext$Context] is returning null for the method call sc.getRealPath(""/""), possibly due to configuration problem."
+"ERROR","web-0","03/19/2013","10:22:46","","cannot determinae webcontext root, the ServletContext from class [org.eclipse.jetty.webapp.WebAppContext$Context] is returning null for the method call sc.getRealPath(""/""), possibly due to configuration problem."
+"ERROR","web-0","03/19/2013","10:25:20","","cannot determinae webcontext root, the ServletContext from class [org.eclipse.jetty.webapp.WebAppContext$Context] is returning null for the method call sc.getRealPath(""/""), possibly due to configuration problem."
+"ERROR","web-0","03/19/2013","10:25:29","","cannot determinae webcontext root, the ServletContext from class [org.eclipse.jetty.webapp.WebAppContext$Context] is returning null for the method call sc.getRealPath(""/""), possibly due to configuration problem."
+"ERROR","web-0","03/20/2013","15:56:24","","can't connect to datasource [newproject]; Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:271)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2771)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at java.sql.DriverManager.getConnection(DriverManager.java:579)
+	at java.sql.DriverManager.getConnection(DriverManager.java:243)
+	at railo.commons.db.DBUtil.getConnection(DBUtil.java:88)
+	at railo.runtime.db.DatasourceConnectionPool.loadDatasourceConnection(DatasourceConnectionPool.java:71)
+	at railo.runtime.db.DatasourceConnectionPool.getDatasourceConnection(DatasourceConnectionPool.java:63)
+	at railo.runtime.orm.hibernate.HibernateORMEngine.getSessionFactory(HibernateORMEngine.java:214)
+	at railo.runtime.orm.hibernate.HibernateORMEngine.init(HibernateORMEngine.java:117)
+	at railo.runtime.config.ConfigImpl.getORMEngine(ConfigImpl.java:3195)
+	at railo.runtime.config.ConfigImpl.resetORMEngine(ConfigImpl.java:3181)
+	at railo.runtime.orm.ORMUtil.resetEngine(ORMUtil.java:46)
+	at railo.runtime.listener.ModernAppListener.initApplicationContext(ModernAppListener.java:369)
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:90)
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18)
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2255)
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2222)
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:315)
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:457)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)
+	at org.eclipse.jetty.servlet.DefaultServlet.doGet(DefaultServlet.java:566)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:457)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:224)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:488)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:932)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:994)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 1 ms ago."
+"ERROR","web-0","03/21/2013","12:44:35","","can't connect to datasource [newproject]; Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:271)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2771)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at java.sql.DriverManager.getConnection(DriverManager.java:579)
+	at java.sql.DriverManager.getConnection(DriverManager.java:243)
+	at railo.commons.db.DBUtil.getConnection(DBUtil.java:88)
+	at railo.runtime.db.DatasourceConnectionPool.loadDatasourceConnection(DatasourceConnectionPool.java:71)
+	at railo.runtime.db.DatasourceConnectionPool.getDatasourceConnection(DatasourceConnectionPool.java:63)
+	at railo.runtime.orm.hibernate.HibernateORMEngine.getSessionFactory(HibernateORMEngine.java:214)
+	at railo.runtime.orm.hibernate.HibernateORMEngine.init(HibernateORMEngine.java:117)
+	at railo.runtime.config.ConfigImpl.getORMEngine(ConfigImpl.java:3195)
+	at railo.runtime.config.ConfigImpl.resetORMEngine(ConfigImpl.java:3181)
+	at railo.runtime.orm.ORMUtil.resetEngine(ORMUtil.java:46)
+	at railo.runtime.listener.ModernAppListener.initApplicationContext(ModernAppListener.java:369)
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:90)
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18)
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2255)
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2222)
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:315)
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:457)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)
+	at org.eclipse.jetty.servlet.DefaultServlet.doGet(DefaultServlet.java:566)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:457)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:224)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:488)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:932)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:994)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 1 ms ago."

@@ -1,0 +1,7 @@
+#loginFormContainer{margin:0 auto;width:320px;background:#eeeeee;padding:20px;border: 1px solid #e3e3e3;}
+#loginFormContainer p{font-size:14px;color:#636363;margin:0 auto;margin-bottom:10px;width:211px;}
+#loginFormContainer form{width: 199px;margin: 0 auto}
+input{height:30px;margin-bottom:10px;width:200px;font-size:18px;padding:8px;}
+input[type=submit]{height: 50px;background:#0072C5;color: #fff}
+label{margin-bottom: 5px;display: inline-block;}
+#loginFormContainer a{text-decoration: none;color: #0072C5}
